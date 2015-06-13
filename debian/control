@@ -1,0 +1,26 @@
+Source: ruby-ffi-yajl
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-libyajl2 (>= 1.2),
+               ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-ffi-yajl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ffi-yajl.git
+Homepage: http://github.com/chef/ffi-yajl
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-ffi-yajl
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-libyajl2 (>= 1.2),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby FFI wrapper around YAJL 2.x
+ Ruby FFI wrapper around YAJL 2.x

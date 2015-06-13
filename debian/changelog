@@ -1,0 +1,5 @@
+ruby-ffi-yajl (2.2.0-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 13 Jun 2015 12:29:08 -0300
