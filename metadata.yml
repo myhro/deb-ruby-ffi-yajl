@@ -1,0 +1,192 @@
+--- !ruby/object:Gem::Specification
+name: ffi-yajl
+version: !ruby/object:Gem::Version
+  version: 2.2.0
+platform: ruby
+authors:
+- Lamont Granquist
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2015-04-30 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.1'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.1'
+- !ruby/object:Gem::Dependency
+  name: rspec
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.99'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.99'
+- !ruby/object:Gem::Dependency
+  name: pry
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.9'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.9'
+- !ruby/object:Gem::Dependency
+  name: rake-compiler
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 0.8.3
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 0.8.3
+- !ruby/object:Gem::Dependency
+  name: mime-types
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.16'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.16'
+- !ruby/object:Gem::Dependency
+  name: libyajl2
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.2'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.2'
+- !ruby/object:Gem::Dependency
+  name: ffi
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.5'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.5'
+description: Ruby FFI wrapper around YAJL 2.x
+email: lamont@getchef.com
+executables:
+- ffi-yajl-bench
+extensions:
+- ext/ffi_yajl/ext/encoder/extconf.rb
+- ext/ffi_yajl/ext/parser/extconf.rb
+- ext/ffi_yajl/ext/dlopen/extconf.rb
+extra_rdoc_files:
+- README.md
+- LICENSE
+files:
+- LICENSE
+- README.md
+- Rakefile
+- bin/ffi-yajl-bench
+- ext/ffi_yajl/ext/dlopen/dlopen.c
+- ext/ffi_yajl/ext/dlopen/extconf.rb
+- ext/ffi_yajl/ext/encoder/encoder.c
+- ext/ffi_yajl/ext/encoder/extconf.rb
+- ext/ffi_yajl/ext/parser/extconf.rb
+- ext/ffi_yajl/ext/parser/parser.c
+- lib/ffi_yajl.rb
+- lib/ffi_yajl/benchmark.rb
+- lib/ffi_yajl/benchmark/MIT-LICENSE
+- lib/ffi_yajl/benchmark/encode.rb
+- lib/ffi_yajl/benchmark/encode_json_and_marshal.rb
+- lib/ffi_yajl/benchmark/encode_json_and_yaml.rb
+- lib/ffi_yajl/benchmark/encode_profile.rb
+- lib/ffi_yajl/benchmark/http.rb
+- lib/ffi_yajl/benchmark/parse.rb
+- lib/ffi_yajl/benchmark/parse_json_and_marshal.rb
+- lib/ffi_yajl/benchmark/parse_json_and_yaml.rb
+- lib/ffi_yajl/benchmark/parse_profile.rb
+- lib/ffi_yajl/benchmark/parse_profile_ruby_prof.rb
+- lib/ffi_yajl/benchmark/parse_stream.rb
+- lib/ffi_yajl/benchmark/subjects/item.json
+- lib/ffi_yajl/benchmark/subjects/ohai.json
+- lib/ffi_yajl/benchmark/subjects/ohai.marshal_dump
+- lib/ffi_yajl/benchmark/subjects/ohai.yml
+- lib/ffi_yajl/benchmark/subjects/twitter_search.json
+- lib/ffi_yajl/benchmark/subjects/twitter_stream.json
+- lib/ffi_yajl/benchmark/subjects/unicode.json
+- lib/ffi_yajl/encoder.rb
+- lib/ffi_yajl/ext.rb
+- lib/ffi_yajl/ext/.keep
+- lib/ffi_yajl/ffi.rb
+- lib/ffi_yajl/ffi/encoder.rb
+- lib/ffi_yajl/ffi/parser.rb
+- lib/ffi_yajl/map_library_name.rb
+- lib/ffi_yajl/parser.rb
+- lib/ffi_yajl/platform.rb
+- lib/ffi_yajl/version.rb
+- spec/ffi_yajl/encoder_spec.rb
+- spec/ffi_yajl/map_library_name_spec.rb
+- spec/ffi_yajl/parser_spec.rb
+- spec/spec_helper.rb
+homepage: http://github.com/chef/ffi-yajl
+licenses:
+- Apache-2.0
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: 1.9.2
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.6
+signing_key: 
+specification_version: 4
+summary: Ruby FFI wrapper around YAJL 2.x
+test_files: []
