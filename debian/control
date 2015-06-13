@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 7.0.50~),
                gem2deb,
                rake,
                libyajl-dev,
-               ruby-rspec
+               ruby-rspec (>= 3)
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-ffi-yajl.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ffi-yajl.git
