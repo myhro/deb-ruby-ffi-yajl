@@ -1,6 +1,6 @@
-ruby-ffi-yajl (2.2.0-1) UNRELEASED; urgency=medium
+ruby-ffi-yajl (2.2.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release
   * debian/patches/0001-Use-the-system-libyajl2.patch: use the packaged
     libyajl2, both during build, and at runtime.
 

@@ -23,4 +23,7 @@ Depends: ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Ruby FFI wrapper around YAJL 2.x
- Ruby FFI wrapper around YAJL 2.x
+ ffi-yajl is a Ruby adapter for the yajl JSON parser/generator library.  It
+ supports multiple Ruby C extension mechanisms, including both MRI native
+ extensions and FFI in order to be compatible with as many Ruby implementations
+ as possible while providing good performance where possible.
