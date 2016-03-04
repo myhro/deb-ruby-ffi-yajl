@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 9~),
                libyajl-dev,
                ruby-rspec (>= 3)
 Standards-Version: 3.9.6
-Vcs-Git: https://anonscm.debian.org/pkg-ruby-extras/ruby-ffi-yajl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-ffi-yajl.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ffi-yajl.git
 Homepage: http://github.com/chef/ffi-yajl
 Testsuite: autopkgtest-pkg-ruby
