@@ -5,8 +5,8 @@ Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.al
 Uploaders: Antonio Terceiro <terceiro@debian.org>
 Build-Depends: debhelper (>= 9~),
                gem2deb,
-               rake,
                libyajl-dev,
+               rake,
                ruby-rspec (>= 3)
 Standards-Version: 3.9.7
 Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-ffi-yajl.git
@@ -18,8 +18,8 @@ XS-Ruby-Versions: all
 Package: ruby-ffi-yajl
 Architecture: any
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
-         libyajl-dev,
+Depends: libyajl-dev,
+         ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Ruby FFI wrapper around YAJL 2.x
