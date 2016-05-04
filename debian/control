@@ -5,6 +5,7 @@ Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.al
 Uploaders: Antonio Terceiro <terceiro@debian.org>,
            Tiago Ilieve <tiago.myhro@gmail.com>
 Build-Depends: debhelper (>= 9~),
+               discount,
                gem2deb,
                libyajl-dev,
                rake,

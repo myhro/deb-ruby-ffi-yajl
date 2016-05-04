@@ -1,0 +1,41 @@
+Description: the README file will be converted from Markdown to HTML during
+build time. Two things have been done to clean it:
+.
+To avoid fetching content from external sources when it is accessed, the
+status image from Travis CI and Code Climate were removed.
+.
+The "How to Install" section was removed, as users of binary packages doesn't
+need them.
+Forwarded: not-needed
+Author: Tiago Ilieve <tiago.myhro@gmail.com>
+
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,3 @@
+-
+-[![Build Status](https://travis-ci.org/chef/ffi-yajl.png)](https://travis-ci.org/chef/ffi-yajl)  [![Code Climate](https://codeclimate.com/github/chef/ffi-yajl.png)](https://codeclimate.com/github/chef/ffi-yajl)
+-
+ # FFI YAJL
+ 
+ ffi-yajl is a Ruby adapter for the [yajl](http://lloyd.github.io/yajl/)
+@@ -9,20 +6,6 @@
+ order to be compatible with as many Ruby implementations as possible
+ while providing good performance where possible.
+ 
+-## How to Install
+-
+-Install from the command-line:
+-
+-```
+-gem install ffi-yajl
+-```
+-
+-Or use a Gemfile:
+-
+-```
+-gem 'ffi-yajl'
+-```
+-
+ ## Supported Ruby VMs:
+ 
+ * Ruby MRI 1.9.3/2.0.0/2.1.x/2.2.x
