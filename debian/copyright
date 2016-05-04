@@ -10,6 +10,7 @@ License: Expat
 
 Files: debian/*
 Copyright: 2015 Antonio Terceiro <terceiro@debian.org>
+           2016 Tiago Ilieve <tiago.myhro@gmail.com>
 License: Expat
 Comment: the Debian packaging is licensed under the same terms as the original package.
 

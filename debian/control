@@ -2,7 +2,8 @@ Source: ruby-ffi-yajl
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders: Antonio Terceiro <terceiro@debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>,
+           Tiago Ilieve <tiago.myhro@gmail.com>
 Build-Depends: debhelper (>= 9~),
                gem2deb,
                libyajl-dev,
