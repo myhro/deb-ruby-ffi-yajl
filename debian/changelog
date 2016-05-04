@@ -1,3 +1,31 @@
+ruby-ffi-yajl (2.2.3-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+  * Use new default gem2deb Rakefile to run the tests
+
+  [ Tiago Ilieve ]
+  * Imported Upstream version 2.2.3
+  * Bump Standards-Version to 3.9.8 (no changes needed).
+  * Convert README.md to HTML (Debian Policy Manual § 12.4 "Preferred
+    documentation formats"):
+    - Add 'debian/clean', update 'debian/ruby-ffi-yajl.docs'.
+    - Add '0002-Clean-README.patch' to avoid fetching external images when
+    accessing the README.html and remove the 'How to Install' section.
+  * debian/control:
+    - Add 'discount' ('mkd2html' command) to build dependencies.
+    - Add myself to uploaders.
+  * debian/copyright:
+    - Add myself to 'debian/*' files.
+  * debian/rules:
+    - Add 'override_dh_auto_build' for building the HTML documentation.
+  * Refreshed '0001-Use-the-system-libyajl2.patch' to fix 'the patch has fuzz
+    which is not allowed' error.
+
+ -- Tiago Ilieve <tiago.myhro@gmail.com>  Wed, 04 May 2016 20:01:27 -0300
+
 ruby-ffi-yajl (2.2.0-1) unstable; urgency=medium
 
   * Initial release
