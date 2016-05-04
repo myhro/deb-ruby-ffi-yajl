@@ -1,5 +1,7 @@
 From: Antonio Terceiro <terceiro@debian.org>
 Date: Sat, 13 Jun 2015 12:54:04 -0300
+Last-Update: Wed, 04 May 2016 19:13:54 -0300
+Reviewed-by: Tiago Ilieve <tiago.myhro@gmail.com>
 Subject: Use the system libyajl2
 
 ---
@@ -10,11 +12,10 @@ Subject: Use the system libyajl2
  4 files changed, 5 insertions(+), 24 deletions(-)
  create mode 100644 lib/libyajl2.rb
 
-diff --git a/ext/ffi_yajl/ext/encoder/extconf.rb b/ext/ffi_yajl/ext/encoder/extconf.rb
-index f7f0116..68ac9b3 100644
 --- a/ext/ffi_yajl/ext/encoder/extconf.rb
 +++ b/ext/ffi_yajl/ext/encoder/extconf.rb
-@@ -1,13 +1,8 @@
+@@ -1,14 +1,9 @@
+ # rubocop:disable Style/GlobalVars
  require 'mkmf'
  require 'rubygems'
 -require 'libyajl2'
@@ -28,11 +29,10 @@ index f7f0116..68ac9b3 100644
  # remove "-Wl,--no-undefined" flag if existent to allow for loading with dlopen
  $LDFLAGS.slice!("-Wl,--no-undefined")
  
-diff --git a/ext/ffi_yajl/ext/parser/extconf.rb b/ext/ffi_yajl/ext/parser/extconf.rb
-index 0b13bca..9ab2489 100644
 --- a/ext/ffi_yajl/ext/parser/extconf.rb
 +++ b/ext/ffi_yajl/ext/parser/extconf.rb
-@@ -1,13 +1,8 @@
+@@ -1,14 +1,9 @@
+ # rubocop:disable Style/GlobalVars
  require 'mkmf'
  require 'rubygems'
 -require 'libyajl2'
@@ -46,9 +46,6 @@ index 0b13bca..9ab2489 100644
  # remove "-Wl,--no-undefined" flag if existent to allow for loading with dlopen
  $LDFLAGS.slice!("-Wl,--no-undefined")
  
-diff --git a/lib/libyajl2.rb b/lib/libyajl2.rb
-new file mode 100644
-index 0000000..7497bfb
 --- /dev/null
 +++ b/lib/libyajl2.rb
 @@ -0,0 +1,5 @@
@@ -57,11 +54,9 @@ index 0000000..7497bfb
 +    '/path/to/whatever'
 +  end
 +end
-diff --git a/metadata.yml b/metadata.yml
-index d8b1fdd..7b6335c 100644
 --- a/metadata.yml
 +++ b/metadata.yml
-@@ -81,20 +81,6 @@ dependencies:
+@@ -81,20 +81,6 @@
        - !ruby/object:Gem::Version
          version: '1.16'
  - !ruby/object:Gem::Dependency
