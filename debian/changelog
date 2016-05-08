@@ -1,3 +1,14 @@
+ruby-ffi-yajl (2.2.3-2) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - Remove 'discount' from build dependencies.
+  * Drop HTML documentation conversion:
+    - Delete 'debian/clean', update 'debian/ruby-ffi-yajl.docs'.
+    - Drop '0002-Clean-README.patch'.
+    - Remove 'override_dh_auto_build' from 'debian/rules'.
+
+ -- Tiago Ilieve <tiago.myhro@gmail.com>  Sat, 07 May 2016 23:03:56 -0300
+
 ruby-ffi-yajl (2.2.3-1) unstable; urgency=medium
 
   [ Cédric Boutillier ]

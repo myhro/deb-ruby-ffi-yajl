@@ -5,10 +5,6 @@ export GEM2DEB_TEST_RUNNER = --check-dependencies
 %:
 	dh $@ --buildsystem=ruby --with ruby
 
-override_dh_auto_build:
-	dh_auto_build
-	mkd2html README.md
-
 override_dh_auto_install:
 	dh_auto_install
 	# included binary is not useful on end user systems
